@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Year</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <button id="musicToggle" >
+  Play Music
+</button>
+
+  <!-- Canvas for fireworks -->
+  <canvas id="Canvas"></canvas>
+
+  <!-- SVG / Animations -->
+  <svg version="1.1" id="home-anim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px" y="0px" viewBox="0 0 1820 1080" style="enable-background:new 0 0 1820 1080;" xml:space="preserve">
+      <g id="home">
+          <defs>
+              <rect id="masque" y="0.4" width="1820" height="1080" />
+          </defs>
+          <clipPath id="cache">
+              <use xlink:href="#masque" style="overflow:visible;" />
+          </clipPath>
+          <g id="light-blue">
+          </g>
+      </g>
+  </svg>
+
+  <!-- Title -->
+  <div class="title-container">
+      <h3 class="title-text">Happy New Year</h3>
+  </div>
+
+  <!-- Year -->
+  <div class="year-container">
+      <span>202</span>
+      <span class="old-digit">5</span>
+      <span class="new-digit">6</span>
+      <div class="balloon"></div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="blastSound">
+    <source src="blast.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
